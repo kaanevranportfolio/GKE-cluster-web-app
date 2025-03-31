@@ -41,6 +41,16 @@ Before you begin, ensure you have the following installed:
 - A Google Cloud Platform (GCP) account with billing enabled.
   Create a service account with necessary permissions, create an access key as json file and configure Terraform with this.
 
+Images were built from Docker files and pushed to DockerHub.
+
+```bash
+docker build -t kemechial/nasa-api-frontend:v3 -f Dockerfiles/Dockerfile.frontend .
+docker build -t kemechial/nasa-api-backend:v2 -f Dockerfiles/Dockerfile.backend .
+docker push kemechial/nasa-api-frontend:v3 
+docker push kemechial/nasa-api-backend:v2 
+
+```
+
 ## Setup
 
 ### 1. Clone the Repository
