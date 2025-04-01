@@ -25,6 +25,8 @@ gcloud container clusters create nasa3-cluster
 
 kubectl config use-context gke_api-project-269968866265_us-central1-b_nasa3-cluster
 
+echo $(pwd)
+cd /tmp
 
 kubectl apply -f secret.yaml
 kubectl apply -f K8-deployment.yaml
