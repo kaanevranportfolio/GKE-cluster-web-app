@@ -1,5 +1,5 @@
-resource "google_compute_firewall" "allow-ssh" {
-  name    = "allow-ssh"
+resource "google_compute_firewall" "allow-ssh-gke" {
+  name    = "allow-ssh-gke"
   network = "default" # Replace with your network name if different
 
   allow {
